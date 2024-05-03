@@ -24,8 +24,8 @@ impl PluginCommand for Tick {
 
     fn signature(&self) -> Signature {
         Signature::build("tick").input_output_types(vec![
-            (Type::ListStream, Type::ListStream),
-            (Type::String, Type::ListStream),
+            (Type::ListStream, Type::Nothing),
+            (Type::String, Type::Nothing),
         ])
     }
 
