@@ -23,7 +23,7 @@ impl PluginCommand for Tick {
     }
 
     fn signature(&self) -> Signature {
-        Signature::build("from sse").input_output_types(vec![
+        Signature::build("tick").input_output_types(vec![
             (Type::ListStream, Type::ListStream),
             (Type::String, Type::ListStream),
         ])
